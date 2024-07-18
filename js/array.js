@@ -19,24 +19,21 @@
 // for(i=1;i<=100;i++){
 //     if()
 // }
-var a;
+var a=[];
 
 for(let i=1;i<=100;i++){
-    for(let j=i-1;j<i;j++){
         if(i%3==0 && i%5==0){
-            a[j]+=["fizz buzz"];
+            a.push("fizz buzz");
         }
         else if(i%3==0){
-            a[j]+=["fizz"];
+            a.push("fizz");
         }
         else if(i%5==0){
-            a[j]+=["buzz"];
+            a.push("buzz");
         }
         else{
-            a[j]+=[i];
+            a.push(i);
         }
-    }
-    
 }
-
+    
 console.log(a);
