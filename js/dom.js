@@ -31,3 +31,7 @@ function clickMe(){
     const x=+document.getElementById("inp").value;
     document.getElementById("nw").textContent=`Square is ${x*x}`
 }
+// Key Event
+function keyEvent(e){
+    console.log(e.value);
+}
