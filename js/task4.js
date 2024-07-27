@@ -32,12 +32,12 @@ while (true) {
         alert("suuccesfuly edited")
     }
     else if(choice==4){
-        str=``
+        str=``;
         for(i=0;i<a.length;i++){
-            str+=`[${i+1}]   ${a[i]} \n`    
+            str+=`[${i+1}]   ${a[i].name} \n`    
         }
         ded=prompt(str+"Enter option");
-        a.splice(a.indexOf(ded-1),1);
+        a.splice(a.indexOf(a[ded-1]),1);
     }
     else if(choice==5){
         break;

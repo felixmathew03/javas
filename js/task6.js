@@ -5,19 +5,26 @@ function addList(){
     display();
 }
 function display(){
-    let str = "";
-    for (let i in a) {
-    str =`${a[i]}  `;
-    }
     const data=document.createElement("li");
-    data.textContent=str;
-    document.getElementById("list").appendChild(data);
-    // const data1=document.createElement("button");
-    // data1.textContent="delete";
-    // document.getElementsByTagName('button').setAttribute('onclick','del()')
-    // document.getElementById("list").appendChild(data1);
+    for (let i in a) {
+        data.innerHTML=`${a[i]} <button onclick="del('${a[i]}')">Delete</button>`;
+        document.getElementById("list").appendChild(data);
+    }
+    
 }
 
-// function del(){
-    
-// }
+function displays(){
+    const data2=document.createElement("h2");
+    data2.textContent=`After Deleting`;
+    document.getElementById("lists").appendChild(data2);
+    for (let i=0;i<a.length;i++) {
+        const data1=document.createElement("li");
+        data1.textContent=`${a[i]}`;
+        document.getElementById("lists").appendChild(data1);
+    }
+}
+function del(b){
+    console.log(b);
+    a.splice(a.indexOf(b),1);
+    displays();
+}
