@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mai, .dis{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#inp{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+}
+.mai button{
+    margin-left: 15px;
+    height: 30px;
+    width: 100px;
+    background-color: rgb(253, 93, 93);
+}
