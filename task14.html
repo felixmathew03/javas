@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        #list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+        }
+        .card{
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 8px #888888;
+            margin: 20px;
+            position: relative;
+            color: white;
+            background-color: rgb(43, 43, 43);
+        }
+        .card:hover{
+            transform: scale(1.03,1.03);
+        }
+        .card h5{
+            position: absolute;
+            left: 3%;
+            top: 1%;
+        }
+        .card h3,.add h4{
+            text-align: center;
+        }
+        .add{
+            border: 1px solid;
+            padding-left: 15px;
+            background-color: rgb(243, 103, 103);
+        } 
+        .comp{
+            padding: 15px;
+            border: 1px solid;
+            text-align: center;
+            background-color: rgb(129, 103, 243);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fetchData()">Users</button>
+    <div id="list">
+        
+    </div>
+    <script src="./js/task14.js"></script>
+</body>
+</html>

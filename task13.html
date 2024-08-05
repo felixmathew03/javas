@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        #list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+        }
+        .card{
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 8px #888888;
+            margin: 20px;
+        }
+        .card:hover{
+            transform: scale(1.03,1.03);
+        }
+        .head{
+            display: flex;
+            align-items: center;
+        }
+        .right{
+            width: 500px;
+        }
+        #img1{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fetchData()">Photos</button>
+    <div id="list">
+        
+    </div>
+    <script src="./js/task13.js"></script>
+</body>
+</html>
