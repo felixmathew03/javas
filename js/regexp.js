@@ -7,7 +7,7 @@ const reg=/^[^m]an/
 const rege=/fish(es)?$/
 const regu=/^[6-9]\d{9}$/
 
-const date=/^([012][1-9]||3[01])-([0][1-9]||1[0-2])-(\d{4})$/
+const date=/^([012][1-9]||3[01])-([0][1-9]||1[0-2])-([0-1]\d{3}||20[01]\d||20[2][0-4])$/
 console.log(regx.test("cat eatsd fish"));
 console.log(regx.test("bat eat fishes"));
 console.log(regx.test("0at eat wheat"));
@@ -19,4 +19,4 @@ console.log(rege.test("bat eat fishes"));
 console.log(rege.test("0at eat wheat"));
 console.log(regu.test("9234567890"));
 
-console.log(date.test("01-01-2999"));
+console.log(date.test("01-01-2024"));
