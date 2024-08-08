@@ -1,6 +1,6 @@
 function email(e){
     data=e.value;
-    regx=/^[a-z][a-z0-9]{3,}@[a-z]{4,6}.(com||in)$/
+    regx=/^[a-z][a-z0-9]{3,}@[a-z]{4,}.(com||in)$/
 
     result=regx.test(data); 
     if(result){
